@@ -1,0 +1,45 @@
+.al-nav{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link ul li{
+    list-style:none;
+}
+.nav-link ul li a{
+   
+    font-weight:500;
+    color:#121213;
+    position: relative;
+}
+.nav-link ul li{
+    position: relative;
+    padding:0 16px;
+}
+.nav-link ul li a::before{
+    position: absolute;
+    content:"";
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-4px;
+    background-color:#121213;
+    opacity:0;
+    transition:0.5s;
+}
+.nav-link ul li a:hover::before{
+    opacity:1;
+    width:100%;
+}
+.menubar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:rgba(0, 0, 0, 0.135);
+    padding:8px 8px;
+    transform:scale(1);
+    transition:0.5s;
+}
+.menubar:hover{
+    background-color:red;
+    color:#fff;
+    transform:scale(1.2);
+}

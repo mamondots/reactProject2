@@ -1,0 +1,30 @@
+.more-btn{
+    position: relative;
+    cursor: pointer;
+}
+.more-btn::before{
+    position: absolute;
+    content:"";
+    left:0;
+    bottom:0;
+    width:0%;
+    height:2px;
+    background-color:#262626;
+    transition:0.5s;
+}
+.more-btn:hover::before{
+    width:100%;
+}
+.top-img{
+    position: relative;
+}
+.top-img::before{
+    position: absolute;
+    content:"";
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(to top,#262626, #ffffff19);
+    
+}
